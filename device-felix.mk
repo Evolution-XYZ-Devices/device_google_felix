@@ -17,8 +17,6 @@
 # Restrict the visibility of Android.bp files to improve build analysis time
 $(call inherit-product-if-exists, vendor/google/products/sources_pixel.mk)
 
-TARGET_KERNEL_DIR ?= device/google/felix-kernel
-TARGET_BOARD_KERNEL_HEADERS := device/google/felix-kernel/kernel-headers
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_RIGHT
 
 $(call inherit-product-if-exists, vendor/google_devices/felix/prebuilts/device-vendor-felix.mk)
